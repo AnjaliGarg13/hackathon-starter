@@ -204,7 +204,7 @@ app.get('/auth/linkedin/callback', passport.authenticate('linkedin', { failureRe
   res.redirect(req.session.returnTo || '/');
 });
 
-/**
+/*
  * OAuth authorization routes. (API examples)
  */
 app.get('/auth/foursquare', passport.authorize('foursquare'));
